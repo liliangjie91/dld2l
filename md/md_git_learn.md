@@ -85,7 +85,8 @@ git rm之后又做了commit，则需要回退到上一版本 git reset HEAD^ a.t
 `git pull origin dev:dev  #指定拉取的分支`
 
 ### 删除分支
-`git branch -d dev #删除分支`
+`git branch -d localBranchName` 删除本地分支  
+`git push origin --delete remoteBranchName` 删除远程分支
 
 ### 融合分支
 #先去到想要做融合的那个分支（不是被融合的分支）  
