@@ -15,11 +15,12 @@ git config --global user.email "xxx@xxx.com"
 ## 文件添加与修改
 ![alt text](Image-1.png)  
 一个新的文件或新的修改，最先出现在工作区  
-通过`git add`把这个修改放进Stage区域  
-通过`git commit -m 'xxx'`确认这个修改，放入版本库中
+通过`git add`把这个修改放进Stage区域-暂存区  
+通过`git commit -m 'xxx'`确认这个修改，放入版本库中  
+通过`git push`同步到云端
 
 ## 撤销修改与版本回退
-`git checkout -- file`
+`git checkout -- file`  
 1.对于尚未add的即未进暂存区的文件，会返回到与最新版本库一样的版本  
 2.对于删除的文件，参见下面 关于删除  
 3.对于已经add过但又修改的文件，会返回到最近一次add后的状态  
