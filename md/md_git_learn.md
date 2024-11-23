@@ -116,9 +116,12 @@ git show xxx #详情
 3. 本地push到GitHub  
 `git push -u origin main`   
 ```
--u #相当于执行
-git push origin master
-git branch --set-upstream master origin/master
+-u #相当于执行一下两条命令
+git push origin main
+git branch --set-upstream main origin/main
+
+可以通过 git branch -vv 查看各分支的upstream设置情况
+若没有设置，则需要使用git push origin xxx指定远程库的分支，直接使用git push会失败
 ```
 
 ### ssh形式连接GitHub
