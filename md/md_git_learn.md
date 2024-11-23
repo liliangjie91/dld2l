@@ -3,8 +3,8 @@
 ## 初始化本地git仓库
 `git init`
 
-通过`git status`查看仓库当前状态
-通过`git add`添加要追踪的文件
+通过`git status`查看仓库当前状态  
+通过`git add`添加要追踪的文件  
 通过`git commit -m 'infofff'`确认添加的文件
 
 首次使用可能需要添加身份
