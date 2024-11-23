@@ -87,8 +87,8 @@ git rm之后又做了commit，则需要回退到上一版本 git reset HEAD^ a.t
 `git branch -d dev #删除分支`
 
 ### 融合分支
-#先去到想要做融合的那个分支（不是被融合的分支）
-`git checkout master`
+#先去到想要做融合的那个分支（不是被融合的分支）  
+`git checkout master`  
 `git merge dev  # master 融合了 dev，即dev的内容 merge到了master里面`
 
 ## 其他
