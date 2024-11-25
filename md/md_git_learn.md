@@ -94,6 +94,9 @@ git rm之后又做了commit，则需要回退到上一版本 git reset HEAD^ a.t
 `git merge dev  # master 融合了 dev，即dev的内容 merge到了master里面`
 
 ## 其他
+### 移动,重命名-mv
+`git mv filename filename2`  
+
 ### diff
 `git diff HEAD -- file #查看当前工作区文件和版本库最新文件的不同`
 
