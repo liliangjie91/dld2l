@@ -14,7 +14,8 @@ window：128k
 |Vocab size|128000|
 |Position embedding|RoPE(500k)|
 
-
+Llama2 使用了2T tokens 即2万亿个token
+Llama3 使用了超过15T tokens
 
 ## 1. introduction
 **大模型训练流程：**
