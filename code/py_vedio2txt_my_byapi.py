@@ -4,7 +4,7 @@
 import os,ffmpeg,configparser,logging
 from openai import OpenAI
 import logging
-from logging_config import setup_logging
+from py_logging_config import setup_logging
 from tqdm import tqdm
 
 

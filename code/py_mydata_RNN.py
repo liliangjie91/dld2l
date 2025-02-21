@@ -18,7 +18,7 @@ d2l.DATA_HUB['fra-eng'] = (d2l.DATA_URL + 'fra-eng.zip', '94646ad1522d915e7b0f92
 
 def read_time_machine():  # @save
     """将时间机器数据集加载到文本行的列表中"""
-    with open(d2l.download('time_machine', folder='./data'), 'r') as f:
+    with open(d2l.download('time_machine', folder='../data'), 'r') as f:
         lines = f.readlines()
     return [re.sub('[^A-Za-z]+', ' ', line).strip().lower() for line in lines]
 
@@ -167,8 +167,8 @@ def load_data_time_machine(batch_size, num_steps,  # @save
 def get_processed_data_nmt(processed_data_path='default',raw_data_path='deafult'):
     # 直接获取预处理后的fra-eng 翻译数据集
     if processed_data_path == 'default':
-        processed_data_path = './data/fra-eng/fra_preprocessed.txt'
-        raw_data_path = './data/fra-eng/fra.txt'
+        processed_data_path = '../data/fra-eng/fra_preprocessed.txt'
+        raw_data_path = '../data/fra-eng/fra.txt'
     if os.path.exists(processed_data_path):
         print('{} exists, loading...'.format(processed_data_path))
         with open(processed_data_path, 'r', encoding='utf-8') as f:

@@ -2,13 +2,13 @@
 # -*- encoding: utf-8 -*-
 from jinja2.optimizer import optimize
 
-import mydata_RNN as mdata
-import mymodel_RNN as mmodel
+import py_mydata_RNN as mdata
+import py_mymodel_RNN as mmodel
 from d2l import torch as d2l
 import matplotlib.pyplot as plt
 import math, torch, collections
 from torch import nn
-from mydata_RNN import tokenize
+from py_mydata_RNN import tokenize
 
 def predict_my(test_input, num_preds, model, vocab, token_type='char'):  # @save
     """在prefix后面生成新字符"""

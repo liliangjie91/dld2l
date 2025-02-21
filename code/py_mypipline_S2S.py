@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-import mydata_RNN as mdata
-import mymodel_RNN as mmodel
+import py_mydata_RNN as mdata
+import py_mymodel_RNN as mmodel
 from d2l import torch as d2l
 import matplotlib.pyplot as plt
 import math, torch, collections
